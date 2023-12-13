@@ -7,9 +7,9 @@ defaults: &defaults
   docker:
     # Choose the version of Node you want here
     - image: cimg/node:18.17.1
-    auth:
-      username: $DOCKERHUB_USERNAME
-      password: $DOCKERHUB_ACCESS_TOKEN
+      auth:
+        username: $DOCKERHUB_USERNAME
+        password: $DOCKERHUB_ACCESS_TOKEN
   working_directory: /mnt/ramdisk/repo
 
 version: 2.1
@@ -94,4 +94,4 @@ workflows:
             - tests
           filters:
             branches:
-              only: master
+              only: main

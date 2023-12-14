@@ -50,8 +50,8 @@ jobs:
             git config --global user.email "james.jager@fusionary.com"
             git config --global user.name "JamesWJager"
       - restore_cache:
-          name: Restore ignite dependency cache
-          key: ignite-deps-cache-{{ .Environment.IGNITE_DEPS_PACKAGER }}-{{ checksum "boilerplate/package.json" }}-{{ arch }}-{{ .Environment.IGNITE_DEPS_KEY_SUFFIX }}
+          name: Restore openRN dependency cache
+          key: openRN_deps-cache-{{ .Environment.OPENRN_DEPS_PACKAGER }}-{{ checksum "boilerplate/package.json" }}-{{ arch }}-{{ .Environment.OPEN_RN_DEPS_KEY_SUFFIX }}
       - run:
           name: Run static tests
           command: yarn format:check && yarn lint && yarn typecheck
@@ -60,10 +60,10 @@ jobs:
           command: yarn test
           no_output_timeout: 5m
       - save_cache:
-          name: Save ignite dependency cache
+          name: Save openRN dependency cache
           paths:
-            - ~/.cache/ignite
-          key: ignite-deps-cache-{{ .Environment.IGNITE_DEPS_PACKAGER }}-{{ checksum "boilerplate/package.json" }}-{{ arch }}-{{ .Environment.IGNITE_DEPS_KEY_SUFFIX }}
+            - ~/.cache/openRN
+          key: open_RN_deps-cache-{{ .Environment.OPENRN_DEPS_PACKAGER }}-{{ checksum "boilerplate/package.json" }}-{{ arch }}-{{ .Environment.OPENRN_DEPS_KEY_SUFFIX }}
 
   publish:
     <<: *defaults
@@ -89,7 +89,7 @@ workflows:
     jobs:
       - tests
       - publish:
-          context: infinitered-npm-package
+          context: openRN-npm-package
           requires:
             - tests
           filters:

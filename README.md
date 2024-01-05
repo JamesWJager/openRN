@@ -15,11 +15,12 @@ The culmination of over seven years of constant React Native development, Ignite
 
 This is the React Native boilerplate that the [Infinite Red](https://infinite.red) team uses on a day-to-day basis to build client apps. Developers who use Ignite report that it saves them two to four weeks of time on average off the beginning of their React Native project!
 
-## Intro Video
+## Intro Videos
 
-Check out the [Getting Started with Ignite](https://www.youtube.com/watch?v=KOSvDlFyg20) video for a 13 minute overview!
+- Check out the [Getting Started with Ignite](https://www.youtube.com/watch?v=KOSvDlFyg20) video for a 13 minute overview!
+- Jamon's Code Quest on [Ignite 9](https://www.youtube.com/watch?v=QmkMsUYrTlk)
 
-## [Full Documentation](https://github.com/infinitered/ignite/blob/master/docs)
+## [Full Documentation](https://github.com/infinitered/ignite/blob/master/docs/README.md)
 
 We've put great effort into the documentation as a team, please [read through it here](https://github.com/infinitered/ignite/blob/master/docs). If you're unsure why a certain decision was made related to this boilerplate or how to proceed with a particular feature, it's likely documented. If it still isn't clear, go through the proper [help channels](#reporting-bugs--getting-help) and we always welcome PRs to improve the docs!
 
@@ -49,7 +50,7 @@ Nothing makes it into Ignite unless it's been proven on projects that Infinite R
 | date-fns          | Date library         | v2      | Excellent date library                         |
 | FlashList         | FlatList replacement | v1      | A performant drop-in replacement for FlatList  |
 
-Ignite also comes with a [component library](https://github.com/infinitered/ignite/blob/master/docs/Components.md) that is tuned for custom designs, theming support, testing, custom fonts, generators, and much, much more.
+Ignite also comes with a [component library](./docs/boilerplate/components/Components.md) that is tuned for custom designs, theming support, testing, custom fonts, generators, and much, much more.
 
 ## Quick Start
 
@@ -68,7 +69,7 @@ npx ignite-cli@latest new PizzaApp
 npx ignite-cli@latest new PizzaApp --yes
 ```
 
-Once you're up and running, check out our new [Getting Started Guide](https://github.com/infinitered/ignite/blob/master/docs/Guide.md) guide or the rest of our [docs](https://github.com/infinitered/ignite/blob/master/docs).
+Once you're up and running, check out our new [Getting Started Guide](/docs/Guide.md) guide or the rest of our [docs](https://github.com/infinitered/ignite/blob/master/docs).
 
 If you'd like to follow a tutorial, check out [this one from Robin Heinze](https://shift.infinite.red/creating-a-trivia-app-with-ignite-bowser-part-1-1987cc6e93a1). _Note that this was created for a previous version of Ignite -- we are working on updating it!_
 
@@ -80,7 +81,7 @@ _The hidden gem of Ignite._ Generators help you scaffold your app very quickly, 
 npx ignite-cli generate --help
 ```
 
-...will give you information on what generators are present. To learn more, check out our [Generators](https://github.com/infinitered/ignite/blob/master/docs/Generators.md) documentation.
+...will give you information on what generators are present. To learn more, check out our [Generators](/docs/concept//Generators.md) documentation.
 
 ### Troubleshooting
 
